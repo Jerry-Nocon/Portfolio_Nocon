@@ -1,0 +1,769 @@
+body{
+    background-color: #000000;
+    overflow: hidden;
+}
+header{
+    height: 100px;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    display:flex;
+    width: 65%;
+    margin: auto;
+}
+li{
+    margin: 2%;
+    font-size: 110%;
+    color: rgb(2, 255, 23);
+}
+@media(max-width: 700px){
+    li{
+        font-size: 70%;
+    }
+    .profiletext{
+        font-size: 13px ;
+    }
+    
+}
+@media(max-width: 1355px){
+    .Par{
+        font-size:20px !important;
+    }
+    .Span{
+        font-size: 25px !important;
+    }
+    .Span2{
+        font-size: 25px !important;
+    }
+}
+@media(max-width: 1060px){
+    .Par{
+        font-size:15px !important;
+    }
+    .Span{
+        font-size: 20px !important;
+    }
+    .Span2{
+        font-size: 20px !important;
+    }
+}
+@media(max-width:820px){
+    .Par{
+        font-size:10px !important;
+    }
+    .Span{
+        font-size: 15px !important;
+    }
+    .Span2{
+        font-size: 15px !important;
+    }
+    .profilecenterdiv{
+        height: 100% !important;
+        width: 150px !important;
+    }
+}
+@media(max-width:590px){
+    .Par{
+        font-size:8px !important;
+    }
+    .Span{
+        font-size: 13px !important;
+    }
+    .Span2{
+        font-size: 13px !important;
+    }
+}
+@media(max-width:500px){
+    .TextContent{
+
+        font-size: 10px;
+    }
+}
+.MenuDiv{
+    top: 1px;
+    z-index: 999;
+    position:sticky;
+    width: 75%;
+    margin: auto;
+}
+.Menu{
+    width: 10vw;
+}
+.Menu:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration:underline;
+}
+.Menu:active{
+    color: rgb(192, 151, 151);
+}
+.BodyDiv{
+    height: 100%;
+    background: #000000;
+    justify-items: center;
+}
+.BodyContent{
+    height: 96vh;
+    width: 99vw;
+    padding: 10px;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+}
+.BodyContentabout{
+    height: 95%;
+    width: 68%;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(64, 109, 28);
+    background-image: url(background\ img.avif);
+    background-size: cover;
+    overflow: auto;
+
+}
+.ProfileDiv{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+}
+.profilecenterdiv{
+    height: 100%;
+    width: 210px;
+    margin: auto;
+}
+.ulmenu{
+    background-color: rgb(73, 72, 72);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 70vw;
+    display: flex;
+}
+.Profile{
+    border-radius:50%;
+    border-style: outset;   
+    border-color: rgb(47, 255, 0);
+    height: 100%;
+    width: 100%;
+    position:relative;
+    left: -1000px;
+    animation: profile 2s ease-in forwards;
+}
+@keyframes profile {
+    0%{
+        left: -1000px;
+    }
+    100%{
+        left: 1px;
+    }
+}
+.TextContent{
+    height: 50%;
+    width: 80%;
+    color: rgb(17, 245, 85);
+    position: relative;
+    left: 20%;
+}
+.fa-solid{
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: rgb(155, 130, 130);
+}
+.fa-solid:hover{
+    color: rgb(237, 238, 232);
+}
+.fa-solid:active{
+    color: grey;
+}
+.Name{
+    font-size: 25px;
+}
+.Par{
+    line-height: 7vh;
+    margin: auto;
+    position: relative;
+    top: 60%;
+    font-size: 25px;
+    font-family: "press start 2p",system-ui;
+}
+.Span{
+    font-size: 33px
+}
+.Span2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.Iresume{
+    height: 1000px;
+    width: 98%;
+    background-color: #9e9898;
+}
+.Divbody{
+    height: 500px;   
+    width: 90%;
+    margin: auto;
+    display: flex;
+    position:relative;
+    background-color: #046b1b;
+    overflow: auto;
+
+}
+@media(max-width: 800px){
+    .Divbody{
+        display: block;
+    }
+    .divbox{
+        width: 95% !important;
+        height: inherit;
+        display: block;
+        color: #00ff37;
+    }
+    .Prod{
+        font-size: 15px;
+    }
+}
+.divbox{
+    width: 20%;
+    height: 95%;
+    background-color: rgb(47, 63, 49);
+    margin: 3px;
+    display: inline-block;          
+    transition: 1s ease-in-out;
+    padding: 10px;
+    overflow: hidden;
+}
+.divbox:hover .Prod {
+    opacity: 1;
+    color: #00ff37;
+}
+
+#divbox1:hover{
+    width: 100%;   
+}
+#divbox2:hover{
+    width: 100%;
+}
+#divbox3:hover{
+    width: 100%;
+}
+#divbox4:hover{
+    width: 100%;
+}
+#divbox5:hover{
+    width: 100%;
+}
+.Resumediv{
+    background-color: rgba(2, 75, 31, 0.5);
+    width: 90%;
+    height: 1200px;
+    text-align: center;
+    margin: auto;
+    color: white;
+    position: relative;
+    padding: 5px;
+    display: flex;
+}
+.Resumedivbot{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+.RESUME{
+    display: block;
+}
+.iframe{
+    height: 100%;
+    width: 100%;
+}
+.Resumebot{
+    position: relative;
+    top: 20%;
+    left: 70%;
+    font-size: 1.5vw;
+    border-radius: 40px;
+    color: #046b1b;
+    font-weight: bolder;
+    background-color: #fbfcf8;
+}
+.Resumebot:hover{
+    background-color: rgb(8, 8, 8);
+    color: #07bb2e;
+}
+.Note{
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    color:red;
+    position: relative;
+    top: 10%;
+}
+.Contactdiv{
+    height: 88%;
+    width: 80%;
+    margin:auto;
+    position: relative;
+    background-color: #046b1b;
+    bottom: 55%;
+}
+.box{
+    height: 100%;
+    margin:auto;
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+}
+#Phone{
+    display: block; 
+}
+.Contactnav{
+    height: 50px;
+    width: 80%;
+    margin:auto;
+    position: relative;
+    bottom: 50%;
+}
+.nav{
+    margin: auto;
+    color:rgb(5, 236, 55);
+    cursor: pointer;
+}
+.Phonediv{
+    height: 270px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    padding: 10px;
+}
+h3{
+    position: relative;
+    text-align: center;
+}
+.Phonepic{
+    height: 150px;
+    width: 150px;
+    background-color: #e7dcdc;
+    border-radius: 50%;
+    margin: auto;
+}
+.Contactpic{
+    font-size: 130px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Phonebody{
+    height: 200px;
+    position: relative;
+    background-color: white;
+}
+.Phonecontent{
+    height: 150px;
+    width: 400px;
+    margin: auto;
+}
+.Phoneinfo{
+    font-size: 18px;
+    line-height: 40px;
+}
+.red{
+    color: red;
+}
+.Facebookdiv{
+    height: 410px;
+    background-color:rgb(0, 0, 0);
+    box-shadow: 5px 10px 10px black;
+}
+.Profilefacebook{
+    height: 150px;
+    border-radius: 110px;
+    position:relative;
+    bottom: 100px;
+    z-index: 1;
+    border-style: outset;
+    border-color: black;
+}
+.Backgroundprofile{
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+.Facebookheader{
+    height: 100%;
+    background-color: black;
+    width: 503px;
+    margin: auto;
+}
+.Facebookcontent{
+    height: 90px;
+    background-color: rgb(0, 0, 0);;
+    position: relative;
+    top: -21px;
+}
+.Facebookfooter{
+    height: 90px;
+    width: 503px;
+    background-color: black;
+    margin: auto;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.Instadiv{
+    background: linear-gradient(80deg, 
+    rgb(249, 206, 52),
+    rgb(238, 42, 123),
+    rgb(98, 40, 215)
+  );
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 10px black;
+}
+#phone{
+    color: white;
+    text-decoration: underline;
+}
+.Instacontent{
+    height: 250px;
+    text-align: center;
+    position: relative;
+}
+.Instaprofile{
+    height: 70%;
+    border-radius: 100%;
+    position: relative;
+    top: 45px;
+}
+.Instaheader{
+    height: 30px;
+}
+.headertext{
+    height: inherit;
+    width: 350px;
+    margin: auto;
+}
+.Instafooter{
+    height: 40px;
+    margin: auto;
+    margin-top: -20px;
+    text-align: center;
+    color: white;
+}
+.Emaildiv{
+    height: 310px;
+    width: 400px;
+    background-color: rgb(243, 236, 236);
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+}
+.Emailheader{
+    height: 50px;
+}
+.Emailfooter{
+    height: 50px;
+    position: relative;
+    bottom: 30px;
+}
+.Emailbody{
+    height: 200px;
+    text-align: center;
+}
+.Emailfootercontent{
+    font-size: 30px;
+    text-align: center;
+}
+.Emailheadercontent{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.Emailpic{
+    height: inherit;
+    width: inherit;
+    border-radius: 100%; 
+}
+.Expernav{
+    height: auto;
+    width: auto;
+    position: relative;
+    display:inline-block;
+    padding: 5px;
+}
+.experiencediv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+@media(max-width: 700px){
+    .experiencediv{
+        display: block;
+    }
+    .Expernav{
+        width: 100%;
+    }
+}
+.ContentExpe{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.Exnav{
+    font-size: 1.5vw;
+    background-color: rgb(4, 107, 27);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.Exnav:active{
+    background-color: rgb(2, 70, 16);
+}
+#Immersion{
+    background-color: rgb(31, 170, 61);
+}
+.Expeul{
+    display: inline;
+}
+.Expecontent{
+    height:1000px;
+    width: 100%;   
+    display: none;
+    position: relative;
+    left: 10px; 
+}
+@media(max-width: 1300px){
+    .Expecontent{
+        height: 700px !important;
+    }
+}
+#Immer{
+    display: block;
+}
+.alliancetext{
+    bottom: 20%;
+    text-align: center;
+    font-size: 1.5vw;
+    position: relative;
+}
+.Text{
+    height: auto;
+    width: 250px;
+    position: relative;
+    top: 100px;
+    left: 30%;
+    animation: textanimate 2s ease forwards;
+    color: #00ff37;
+}
+@keyframes textanimate {
+    0%{
+        left: -500px;
+        background-color: rgba(0, 0, 0);
+    }
+    100%{
+        left: 1px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+.Expediv{
+    background-image: url(alliance.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 99%;
+    
+}
+.pocaritext{
+    height: auto;
+    width: 260px;
+    position: absolute;
+    bottom:240px;
+    text-align:left;
+    overflow: hidden;
+}
+.potext{
+    position: relative;
+    left: -500px;
+    color:#00ff37;
+    animation: textanimate 2s ease forwards;
+}
+@keyframes textanimate {
+    0%{
+        left: -500px;
+        background-color: rgba(0, 0, 0);
+    }
+    100%{
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+@keyframes pocari2 {
+    0%{
+        right: -500px;
+    }
+    100%{
+        right: 1px;
+    }
+}
+.pocacontainer{
+    height: inherit;
+    width: inherit;
+    background-image: url(POCARI.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 99%;
+}
+.JTdiv{
+        background-image: url(J&T.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 99%;
+        overflow: hidden;
+}
+@keyframes JT {
+    0%{
+        right: -500px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+.Allanicdiv{
+    background-image: url(Allanic.png);
+    height: 100%;
+    width: 99%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+.Immersiondiv{
+    background-image: url(Immersion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 99%;
+    overflow: hidden;
+    
+}
+.JTtext{
+    height: auto;
+    width: 200px;
+    float:right;
+    position: relative;
+    top: 100px;
+    right: -500px;
+    text-align: center;
+    animation: JT 2s ease forwards;
+    overflow: hidden;
+    color: #00ff37;
+}
+.Allanictext{
+    height: auto;
+    width: 200px;
+    float:right;
+    position: relative;
+    top: 100px;
+    right: -500px;
+    text-align: center;
+    animation: textaniback 2s ease forwards;
+    overflow: hidden;
+    color: rgb(60, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes textaniback {
+    0%{
+        background-color: rgba(0, 0, 0, 0);
+        right: -500px;
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0.5);
+        right: 10px;
+    }
+}
+.Immertext{
+    height: auto;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    animation: Immersion 2s ease forwards;
+    overflow: hidden;
+    background-color: #000000;
+    color: #00ff37;
+}
+@keyframes Immersion {
+    0%{
+        left: -500px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+.DSA{
+    width: 100%;
+    height: 80%;
+}
+.OOP{
+    width: 100%;
+    height: 80%;
+}
+.Automate{
+    width: 100%;
+    height: 80%;
+}
+.PowerApps{
+    width: 100%;
+    height: 80%;
+}
+.PowerBI{
+    width: 100%;
+    height: 80%;
+}
+h1, h2{
+    text-align: center;
+    color: rgb(0, 221, 48);
+    font-size:2vw;
+
+}
+p{
+    font-size: 1.5vw;
+}
+.con{
+    font-size: 2vw;
+    position: relative;
+    bottom: 60%;
+}
+.Prod{
+    opacity: 0;
+}
+.Lastdiv{
+    width: inherit;
+    height: 80px;
+    background-color: #046b1b;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.Resumebackup:hover{
+    color: white;
+}
